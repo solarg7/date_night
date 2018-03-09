@@ -1,0 +1,38 @@
+{
+    "categoryName1": "Places To Eat",
+    "categoryName2": "Places To Go",
+    "Eats": [
+        {
+            "name": "Chipotle",
+            "location": "Lake Mary",
+            "rating": "3"
+        },
+        {
+            "name": "Jeremiah's ice cream",
+            "location": "Lake Mary",
+            "rating": "5"
+        },
+        {
+            "name": "Publix Subs",
+            "location": "Lake Mary",
+            "rating": "100"
+        }
+    ],
+    "Places": [
+        {
+            "name": "Flea Market",
+            "location": "Main Street",
+            "date": "Every Saturday"
+        },
+        {
+            "name": "St. Patrick's Day Parade",
+            "location": "Heathrow",
+            "date": "March 14, 2018"
+        },
+        {
+            "name": "Food Trucks",
+            "location": "Lake Mary HS",
+            "date": "March 10, 2018"
+        }
+    ]
+  }
