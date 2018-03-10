@@ -18,16 +18,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json());
 
-<<<<<<< HEAD
-app.use(express.static(__dirname + '/public'));
-
-app.listen(PORT, function() {
-  console.log("App now listening at localhost:" + PORT);
-});
-
-=======
 // Static directory
 app.use(express.static("public"));
+
+app.locals.eat = require('./db/eat.json');
+
 
 // Routes
 require("./routes/api-event.js")(app);
@@ -41,4 +36,3 @@ db.sequelize.sync({ force: true }).then(function() {
     console.log("App listening on PORT " + PORT);
   });
 });
->>>>>>> 59e310e07de9584bcf285e84336866d10658f4c5
