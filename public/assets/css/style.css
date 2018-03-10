@@ -1,7 +1,11 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+/* li {
+  padding: 0px;
+  margin: 0px;
+  color: #faebd7;
+} */
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .label {
@@ -11,7 +15,6 @@ li {
 .form-group {
   padding: 5px;
   margin: 5px;
-  /* background: aqua; */
 }
 
 .form-group {
