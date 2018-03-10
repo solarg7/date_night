@@ -6,19 +6,29 @@
         <% include ../partials/head %>
     </head>
 
+
 <body class="container">
+    <div class="jumbotron">
+        <h1>This is DateNight</h1>
+    </div>
+
+
     <header>
         <% include ../partials/header %>
     </header>
 
 <main>
-    <div class="jumbotron">
-                <h1>This is DateNight</h1>
-                <P>A new experience is one click away</P>
-    </div>
+
+    <div class="row">
+        <div class="col-lg-2">
+            <p><% include ../partials/sidebar %></p>
+        </div>
+
+        <div class="col-lg-10">
 
             <p><% include ../partials/introform %></p>
-
+        </div>
+    </div>
 
 </main>
 
