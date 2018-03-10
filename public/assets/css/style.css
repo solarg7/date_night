@@ -1,8 +1,3 @@
-.jumbotron {
-  color: cadetblue;
-  font-size: 10px;
-}
-
 li {
   padding: 5px;
   margin: 5px;
@@ -16,7 +11,7 @@ li {
 .form-group {
   padding: 5px;
   margin: 5px;
-  background: aqua;
+  /* background: aqua; */
 }
 
 .form-group {
