@@ -1,38 +1,44 @@
+//Dependencies
 var express = require("express");
-var app = express();
+var bodyParser = require("body-parser");
 var ejs = require("ejs");
 
+//Express Server Setup
+var app = express();
+var PORT = 3000;
+
+//Syncing Models
+var db = require("./models");
+
+//Setting EJS as view engine
 app.set('view engine', 'ejs');
 
-var PORT = process.env.PORT || 3000;
+//Setting up the data parsing
+app.use(bodyParser.urlencoded({ extended: true }));
 
-var bodyParser = require("body-parser");
-
-//we can remove this later
-app.locals.eat = require('./db/eat.json');
-
-app.get('/', function(req,res){
-  res.render('layouts/index');
-});
-app.get('/results', function(req,res){
-  res.render('layouts/results');
-});
-app.get('/post', function(req,res){
-  res.render('layouts/post');
-});
-
-// // Serve static content for the app from the "public" directory in the application directory.
-// app.use(express.static("public"));
-
-// parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }));
-
-// parse application/json
 app.use(bodyParser.json());
 
+<<<<<<< HEAD
 app.use(express.static(__dirname + '/public'));
 
 app.listen(PORT, function() {
   console.log("App now listening at localhost:" + PORT);
 });
 
+=======
+// Static directory
+app.use(express.static("public"));
+
+// Routes
+require("./routes/api-event.js")(app);
+require("./routes/api-restaurant.js")(app);
+require("./routes/api-user.js")(app);
+require("./routes/html-routes.js")(app);
+
+// Syncing with our database and starting the express server
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
+});
+>>>>>>> 59e310e07de9584bcf285e84336866d10658f4c5
