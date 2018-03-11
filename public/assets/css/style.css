@@ -1,22 +1,111 @@
-/* li {
-  padding: 0px;
-  margin: 0px;
-  color: #faebd7;
-} */
+
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,0+100;Blue+to+Transparent */
+background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
 }
 
-.label {
-  font-weight: bold;
+.jumbotron, .navbar {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #dcdcdc;
 }
 
-.form-group {
-  padding: 5px;
-  margin: 5px;
+.navbar {
+  background-color: transparent;
+  border: 1px solid #dcdcdc;
 }
 
-.form-group {
-  margin-bottom: 5px;
+input, select, #textarea {
+  font-size: 120%;
+  color: #5a5854;
+  background-color: #f2f2f2;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 5px 5px 5px 30px;
+  background-repeat: no-repeat;
+  background-position: 8px 9px;
+  display: block;
+  margin-bottom: 10px;}
+input:focus, input:hover, select:focus, select:hover, #textarea {
+  background-color: #ffffff;
+  border: 1px solid #b1e1e4;}
+
+
+
+  input#submit {
+    padding: 5px 10px 5px 10px;
+    color: #ffffff;
+    text-shadow: 0px 1px 1px #ffffff;
+    /* border-bottom: 2px solid #b2b2b2; */
+    background-color: #499bea;
+    background: -webkit-gradient(linear, left top, left bottom, from(#499bea), to(#207ce5));
+    /* background: -moz-linear-gradient(top, #beeae9, #a8cfce);
+    background: -o-linear-gradient(top, #beeae9, #a8cfce);
+    background: -ms-linear-gradient(top, #beeae9, #a8cfce); */
+  }
+  input#submit:hover {
+    color: #a1dbff;
+    border: 1px solid #a4a4a4;
+    /* border-top: 2px solid #b2b2b2; */
+    background-color: #a0dbc4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#499bea), to(#207ce5));
+    /* background: -moz-linear-gradient(top, #a8cfce, #beeae9);
+    background: -o-linear-gradient(top, #a8cfce, #beeae9);
+    background: -ms-linear-gradient(top, #a8cfce, #beeae9); */
+  }
+
+    fieldset {
+      width: 750px;
+      /* border: 1px solid #dcdcdc; */
+      /* border: 1px solid #499bea; */
+      border: 1px solid #ffffff;
+
+      border-radius: 10px;
+      padding: 20px;
+      margin: auto;
+      text-align: right;}
+
+    legend, .btn-group {
+      /* background-color: #b9e4e3; */
+      /* background-color: #499bea; */
+      border: 1px solid #dcdcdc;
+      border-radius: 10px;
+      padding: 10px 20px;
+      color: #ffffff;
+      text-align: left;
+      text-transform: uppercase;}
+
+#event, #restaurant {
+  display: none;
+}
+
+.btn-group {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  overflow: auto;
+}
+
+#footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+#introform {
+  height: 400px;
+}
+
+#event, #restaurant {
+  height: 600px;
 }

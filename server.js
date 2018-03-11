@@ -21,6 +21,9 @@ app.use(bodyParser.json());
 // Static directory
 app.use(express.static("public"));
 
+app.locals.eat = require('./db/eat.json');
+
+
 // Routes
 require("./routes/api-event.js")(app);
 require("./routes/api-restaurant.js")(app);
