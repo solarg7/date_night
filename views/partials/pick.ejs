@@ -2,15 +2,25 @@
 
 
 
-<% if(true){ %>
+<div class="flexslider">
+    <ul class="slides">
+      <li>
+        <img src="/assets/images/pasta.jpg" />
+      </li>
+      <li>
+        <img src="/assets/images/eats.jpg" />
+      </li>
 
-post entire form here
+    </ul>
+</div>
 
-<% } else if { %>  
+<script>
 
-post entire form here
-
-<% } %>
-
+$(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+});
+</script>
 
 
