@@ -5,7 +5,7 @@ var ejs = require("ejs");
 
 //Express Server Setup
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 //Syncing Models
 var db = require("./models");
