@@ -1,4 +1,15 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+}
 
+header {
+	background: url(../images/orlandoskyline1.jpg) 0 0 repeat-x;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -7,16 +18,19 @@ background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(125,185,232,0) 
 background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+background-repeat: no-repeat;
 }
 
-.jumbotron, .navbar {
+.jumbotron {
   background: transparent;
   color: #ffffff;
-  border: 1px solid #dcdcdc;
+  /* border: 1px solid #dcdcdc; */
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .navbar {
-  background-color: transparent;
+  /* background-color: transparent; */
   border: 1px solid #dcdcdc;
 }
 
