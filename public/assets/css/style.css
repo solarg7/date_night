@@ -75,11 +75,21 @@ input:focus, input:hover, select:focus, select:hover, #textarea {
       /* border: 1px solid #dcdcdc; */
       /* border: 1px solid #499bea; */
       border: 1px solid #ffffff;
-
       border-radius: 10px;
       padding: 20px;
       margin: auto;
       text-align: right;}
+
+    #pick {
+        width: 750px;
+        /* border: 1px solid #dcdcdc; */
+        /* border: 1px solid #499bea; */
+        border: 1px solid #499bea;
+         border-radius: 10px;
+        padding: 20px;
+        margin: auto;
+        text-align: right;}
+  
 
     legend, .btn-group {
       /* background-color: #b9e4e3; */
@@ -90,6 +100,20 @@ input:focus, input:hover, select:focus, select:hover, #textarea {
       color: #ffffff;
       text-align: left;
       text-transform: uppercase;}
+
+      #listevent {
+        /* background-color: #b9e4e3; */
+        /* background-color: #499bea; */
+        border: 1px solid #499bea;
+        border-radius: 10px;
+        padding: 10px 20px;
+        color: #ffffff;
+        text-align: left;
+        text-transform: uppercase;
+      }
+  
+
+
 
 #event, #restaurant {
   display: none;
@@ -193,4 +217,22 @@ background-color: #499bea;
   background: -webkit-linear-gradient(top, #a7c7dc 0%,#85b2d3 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #a7c7dc 0%,#85b2d3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7c7dc', endColorstr='#85b2d3',GradientType=0 ); /* IE6-9 */;
+}
+
+#slider {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 36px;
+  color: #fff;
+}
+
+#slidertext {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 14px;
+  color: #fff;
+}
+
+#myCarousel {
+  cursor: pointer;
 }
