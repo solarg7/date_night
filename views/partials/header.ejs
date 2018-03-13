@@ -14,25 +14,29 @@
             </a>           
 
             <ul class="nav navbar-nav">
-                <!-- <li><a class="active" href="/">Home</a></li> -->
                 <li><a href="/results">See Listings</a></li>
                 <li><a href="/post">Post Listings</a></li>
                 <li><a href="#">Login</a></li>                
             </ul>
+
             
         </div>
     </div>
 </nav>
 
 
-<!-- <div class="topnav">
-    <li><a class="active" id="home" href="/">Home</a></li>
-    <li><a href="/results" onClick="setActiveLink(this.id)">See Listings</a></li>
-    <li><a href="/post" onClick="setActiveLink(this.id)">Post Listings</a></li>
-    <li><a href="#">Log In</a></li>
-</div> -->
+
 
 <script>
+    $(document).ready(function(){
+    //Handles menu drop down
+    $('.dropdown-menu').find('form').click(function (e) {
+        e.stopPropagation();
+    });
+});
+
+
+
 $(function (){
     setNavigation();
     });
@@ -49,9 +53,5 @@ function setNavigation(){
         }
    });
 }
-
-
-
-
 </script>
 
