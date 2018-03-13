@@ -112,6 +112,7 @@ input:focus, input:hover, select:focus, select:hover, #textarea {
   background-color: #efefef;
   text-align: center;
   overflow: hidden;
+  margin-bottom: 0;
 
 }
 
