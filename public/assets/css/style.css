@@ -1,5 +1,14 @@
-html, body {
-  margin: 0;
+html {
+  margin: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+
+body {
+  margin: 250px 0 0 0;
+  padding: 0;
   height: 100%;
   width: 100%;
   min-width: 100%;
@@ -9,6 +18,11 @@ header {
 	background: url(../images/orlandoskyline1.jpg) 0 0 repeat-x;
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index:1000;
 }
 
 body {
@@ -48,48 +62,64 @@ input:focus, input:hover, select:focus, select:hover, #textarea {
 
 
 
-  input#submit {
-    padding: 5px 10px 5px 10px;
-    color: #ffffff;
-    text-shadow: 0px 1px 1px #ffffff;
-    /* border-bottom: 2px solid #b2b2b2; */
-    background-color: #499bea;
-    background: -webkit-gradient(linear, left top, left bottom, from(#499bea), to(#207ce5));
-    /* background: -moz-linear-gradient(top, #beeae9, #a8cfce);
-    background: -o-linear-gradient(top, #beeae9, #a8cfce);
-    background: -ms-linear-gradient(top, #beeae9, #a8cfce); */
-  }
-  input#submit:hover {
-    color: #a1dbff;
-    border: 1px solid #a4a4a4;
-    /* border-top: 2px solid #b2b2b2; */
-    background-color: #a0dbc4;
-    background: -webkit-gradient(linear, left top, left bottom, from(#499bea), to(#207ce5));
-    /* background: -moz-linear-gradient(top, #a8cfce, #beeae9);
-    background: -o-linear-gradient(top, #a8cfce, #beeae9);
-    background: -ms-linear-gradient(top, #a8cfce, #beeae9); */
+input#submit {
+  padding: 5px 10px 5px 10px;
+  color: #ffffff;
+  text-shadow: 0px 1px 1px #ffffff;
+  /* border-bottom: 2px solid #b2b2b2; */
+  background-color: #499bea;
+  background: -webkit-gradient(linear, left top, left bottom, from(#499bea), to(#207ce5));
+  /* background: -moz-linear-gradient(top, #beeae9, #a8cfce);
+  background: -o-linear-gradient(top, #beeae9, #a8cfce);
+  background: -ms-linear-gradient(top, #beeae9, #a8cfce); */
   }
 
-    fieldset {
-      width: 750px;
-      /* border: 1px solid #dcdcdc; */
-      /* border: 1px solid #499bea; */
-      border: 1px solid #ffffff;
+input#submit:hover {
+  color: #a1dbff;
+  border: 1px solid #a4a4a4;
+  /* border-top: 2px solid #b2b2b2; */
+  background-color: #a0dbc4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#499bea), to(#207ce5));
+  /* background: -moz-linear-gradient(top, #a8cfce, #beeae9);
+  background: -o-linear-gradient(top, #a8cfce, #beeae9);
+  background: -ms-linear-gradient(top, #a8cfce, #beeae9); */
+  }
 
-      border-radius: 10px;
-      padding: 20px;
-      margin: auto;
-      text-align: right;}
+fieldset {
+  width: 750px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  text-align: right;
+}
 
-    legend, .btn-group {
-      /* background-color: #b9e4e3; */
-      /* background-color: #499bea; */
-      border: 1px solid #dcdcdc;
-      border-radius: 10px;
-      padding: 10px 20px;
-      color: #ffffff;
-      text-align: left;
-      text-transform: uppercase;}
+#pick {
+  width: 750px;
+  border: 1px solid #499bea;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  text-align: right;
+}
+  
+
+legend, .btn-group {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-align: left;
+  text-transform: uppercase;}
+
+#listevent {
+  border: 1px solid #499bea;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-align: left;
+  text-transform: uppercase;
+}
 
 #event, #restaurant {
   display: none;
@@ -180,12 +210,6 @@ background-color: #499bea;
   color: black;
 }
 
-/* Add a color to the active/current link */
-/* .topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-} */
-
 .active {
   font-weight: bold;
   background: #a7c7dc; /* Old browsers */
@@ -193,4 +217,22 @@ background-color: #499bea;
   background: -webkit-linear-gradient(top, #a7c7dc 0%,#85b2d3 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #a7c7dc 0%,#85b2d3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7c7dc', endColorstr='#85b2d3',GradientType=0 ); /* IE6-9 */;
+}
+
+#slider {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 36px;
+  color: #fff;
+}
+
+#slidertext {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 14px;
+  color: #fff;
+}
+
+#myCarousel {
+  cursor: pointer;
 }

@@ -13,25 +13,15 @@
   });
   </script>
 
-<div class="btn-group" data-toggle="buttons">
-  <!-- <label class="btn btn-primary active">
-    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-  </label> -->
-  <label class="btn btn-primary" id="one">
-    <input type="radio" name="options" autocomplete="off"> Event
-  </label>
-  <label class="btn btn-primary" id="two">
-    <input type="radio" name="options" autocomplete="off"> Restaurant
-  </label>
-</div>
 
 <p></p>
 
+
 <form id="event" class="form-horizontal">
-    <fieldset>
+    <fieldset id="pick">
     
     <!-- Form Name -->
-    <legend>List Your Event</legend>
+    <legend id="listevent">List Your Event</legend>
     
     <!-- Text input-->
     <!-- <div class="form-group">
@@ -100,10 +90,10 @@
 
 
     <form id="restaurant" class="form-horizontal">
-      <fieldset>
+      <fieldset id="pick">
       
       <!-- Form Name -->
-      <legend>List Your Restaurant</legend>
+      <legend id="listevent">List Your Restaurant</legend>
       
       <!-- Text input-->
       <div class="form-group">
@@ -159,5 +149,16 @@
       </div>
       
       </fieldset>
-      </form>
-    
+
+    </form>
+
+
+
+    <!-- <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary" id="one">
+        <input type="radio" name="options" autocomplete="off"> Event
+      </label>
+      <label class="btn btn-primary" id="two">
+        <input type="radio" name="options" autocomplete="off"> Restaurant
+      </label>
+    </div> -->
