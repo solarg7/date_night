@@ -1,108 +1,88 @@
-
 <script>
-  $(document).ready(function(){
-      $("#one").click(function(){
-          $("#event").show(1000);
-          $("#restaurant").hide(1000);
-      });
-
-      $("#two").click(function(){
+    $(document).ready(function(){
+        $("#go").click(function(){
           $("#restaurant").show(1000);
           $("#event").hide(1000);
-      });
-  });
-  </script>
+          });
+
+        $("#gogo").click(function(){
+          $("#event").show(1000);
+          $("#restaurant").hide(1000);
+          });
+  
+    });
+    </script>
 
 
-<p></p>
 
+<div class="row" id="event">
+    <form class="form-horizontal">
+        <fieldset id="pick">
+        
+        <!-- Form Name -->
+        <legend id="listevent">List Your Event</legend>
 
-<form id="event" class="form-horizontal">
-    <fieldset id="pick">
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textarea">Event Name</label>
+          <div class="col-md-4">                     
+            <input type="text" class="form-control" id="eventname" name="textarea">
+          </div>
+        </div>
     
-    <!-- Form Name -->
-    <legend id="listevent">List Your Event</legend>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">City</label>  
+          <div class="col-md-4">
+          <input id="city" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
+          </div>
+        </div>
     
-    <!-- Text input-->
-    <!-- <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput">First Name</label>  
-      <div class="col-md-4">
-      <input id="firstname" name="textinput" type="text" placeholder="placeholder" class="form-control input-md" required="">
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput">Last Name</label>  
-      <div class="col-md-4">
-      <input id="lastname" name="textinput" type="text" placeholder="placeholder" class="form-control input-md" required="">
-      </div>
-    </div> -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="textarea">Event Name</label>
-      <div class="col-md-4">                     
-        <input type="text" class="form-control" id="eventname" name="textarea">
-      </div>
-    </div>
-
-    <!-- Select Basic -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="selectbasic">Select Type</label>
-      <div class="col-md-4">
-        <select id="typeevent" name="selectbasic" class="form-control">
-          <option value="1">Festival</option>
-          <option value="2">Parade</option>
-          <option value="3">Garage Sale</option>
-          <option value="4">Carnival</option>
-          <option value="5">Flea Market</option>
-          <option value="6">Outdoors</option>
-          <option value="7">Other</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput">Street</label>  
-      <div class="col-md-4">
-      <input id="eventstreet" name="textinput" type="text" placeholder="123 First St..." class="form-control input-md">
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput">City</label>  
-      <div class="col-md-4">
-      <input id="eventcity" name="textinput" type="text" placeholder="Orlando..." class="form-control input-md">
-      </div>
-    </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Zip Code</label>  
+          <div class="col-md-4">
+          <input id="zipcode" name="textinput" type="text" placeholder="Required" class="form-control input-md" required="">
+          </div>
+        </div>
+    
+    
+         <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="selectbasic">Select Type</label>
+          <div class="col-md-4">
+            <select id="typeevent" name="selectbasic" class="form-control">
+              <option value="1">Festival</option>
+              <option value="2">Parade</option>
+              <option value="3">Garage Sale</option>
+              <option value="4">Carnival</option>
+              <option value="5">Flea Market</option>
+              <option value="6">Outdoors</option>
+              <option value="7">Other</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Textarea -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textarea">Description</label>
+          <div class="col-md-4">                     
+            <textarea class="form-control" id="textarea" name="textarea"></textarea>
+            <input type="submit" value="Submit" id="submit">
+          </div>
+        </div>
+        </fieldset>
+        </form>
 
     <div class="form-group">
       <label class="col-md-4 control-label" for="textinput">Zip Code</label>  
       <div class="col-md-4">
       <input id="eventzip" name="textinput" type="text" placeholder="Zip Code..." class="form-control input-md" required="">
       </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput">Time</label>  
-      <div class="col-md-4">
-      <input id="time" name="textinput" type="text" placeholder="..." class="form-control input-md" required="">
-      </div>
-    </div>
-    
-    <!-- Textarea -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="textarea">Description</label>
-      <div class="col-md-4">                     
-        <textarea class="form-control" id="eventDescription" name="textarea"></textarea>
-        <input type="button" value="Submit" id="eventSubmit">
-      </div>
-    </div>
-    
-    </fieldset>
-    </form>
 
 
 
-    <form id="restaurant" class="form-horizontal">
+  <div id="restaurant" class="row">
+
+      
+    <form class="form-horizontal">
       <fieldset id="pick">
       
       <!-- Form Name -->
