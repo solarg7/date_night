@@ -15,6 +15,12 @@ module.exports = function(app) {
         });
     });
 
+    app.get("/api/restaurant", function(req, res) {
+        db.Restaurant.findAll({}).then(function(results) {
+            res.json(results);
+        });
+    });
+
     app.get("/api/restaurant/:id", function(req, res) {
         var query = req.params.id;
         db.Restaurant.findOne({

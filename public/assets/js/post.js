@@ -1,0 +1,48 @@
+$(document).ready(function() {
+
+$("#eventSubmit").on("click", function(event) {
+    event.preventDefault();
+    var newEvent = {
+        name: $("#eventname").val().trim(),
+        eventType: $("#typeevent").val().trim(),
+        street: $("#eventstreet").val().trim(),
+        city: $("#eventcity").val().trim(),
+        zip: $("#eventzip").val().trim(),
+        time: $("#time").val().trim(),
+        description: $("#eventDescription").val().trim()
+    };
+
+    $.post("/api/event", newEvent)
+    .then(function(data) {
+        console.log(data);
+        console.log("added");
+    });
+
+    $("#event").each(function() {
+        this.reset();
+    });
+});
+
+$("#restSubmit").on("click", function(event) {
+    event.preventDefault();
+    var newRestaurant = {
+        name: $("#restname").val().trim(),
+        foodType: $("#foodtype").val().trim(),
+        street: $("#reststreet").val().trim(),
+        city: $("#restcity").val().trim(),
+        zip: $("#restzip").val().trim(),
+        description: $("#restDescription").val().trim()
+    };
+
+    $.post("/api/restaurant", newRestaurant)
+    .then(function(data) {
+        console.log(data);
+        console.log("added");
+    });
+
+    $("#restaurant").each(function() {
+        this.reset();
+    });
+});
+
+});

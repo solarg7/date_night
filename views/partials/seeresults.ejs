@@ -1,11 +1,9 @@
 <div class="row">
     <div class="col-sm-6">
 
-        <h3><%= eat.categoryName1 %></h3>
-        <ul>
-                <% eat.Eats.forEach(function(item) { %>
-                    <li><%= item.name %> - <%= item.location %> - Rating: <%= item.rating %></li>
-                <% }); %>
+        <h3>Local Restaurants</h3>
+        <ul id="restList">
+                
             </ul>
 
 
@@ -14,11 +12,9 @@
 
     <div class="col-sm-6">
 
-        <h3><%= eat.categoryName2 %></h3>
-        <ul>
-                <% eat.Places.forEach(function(item) { %>
-                    <li><%= item.name %> - <%= item.location %> - Date: <%= item.date %></li>
-                <% }); %>
+        <h3>Local Events</h3>
+        <ul id="eventList">
+                
             </ul>
 
     </div>
