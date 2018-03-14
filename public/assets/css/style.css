@@ -125,9 +125,11 @@ legend, .btn-group {
   background-color: #fff;
   text-align: left;
   text-transform: uppercase;
-  margin-top:-35px;
   width: 40%;
-  margin-left: 400px;
+  /* margin-left: 400px; */
+  margin: auto;
+  margin-top:-30px;
+  
 }
 
 #go, #gogo {
@@ -247,4 +249,16 @@ background-color: #fefcea;
 
 #carousel {
   width:55%;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
