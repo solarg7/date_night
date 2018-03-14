@@ -1,0 +1,40 @@
+<div class="panel panel-default">
+        <!-- <div class="panel-heading containerHeader"><strong>Recent Postings</strong></div>           -->
+          <div class="panel-body">
+    
+    
+            <h3><%= eat.categoryName2 %></h3>
+                <p>Latest Postings</p>
+
+
+            <% eat.Places.forEach(function(item) { %>
+                <li><%= item.name %> - <%= item.location %></li>
+            <% }); %>
+
+       
+
+            <h3><%= eat.categoryName1 %></h3>
+            <p>Latest Postings</p>
+
+
+        <% eat.Eats.forEach(function(item) { %>
+            <li><%= item.name %> - <%= item.location %></li>
+        <% }); %>
+
+
+
+
+          </div>
+</div>
+
+
+
+<!-- <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary" id="one">
+          <input type="radio" name="options" autocomplete="off"> Event
+        </label>
+        <label class="btn btn-primary" id="two">
+          <input type="radio" name="options" autocomplete="off"> Restaurant
+        </label>
+      </div> -->
+  
