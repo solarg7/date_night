@@ -110,7 +110,8 @@ legend, .btn-group {
   padding: 10px 20px;
   color: #ffffff;
   text-align: left;
-  text-transform: uppercase;}
+  text-transform: uppercase;
+}
 
 #listevent {
   border: 1px solid #499bea;
@@ -119,6 +120,26 @@ legend, .btn-group {
   color: #ffffff;
   text-align: left;
   text-transform: uppercase;
+}
+
+
+
+#bottomlegend {
+  border: 1px solid #499bea;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #499bea;
+  background-color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top:-35px;
+  width: 40%;
+  margin-left: 400px;
+}
+
+#go, #gogo {
+  background-color: transparent;
+  border: 0;
 }
 
 #event, #restaurant {
@@ -166,7 +187,6 @@ legend, .btn-group {
     background-color: #499bea;
     color: white;
     border: none;
-
 }
 
 .panel > .panel-body {
