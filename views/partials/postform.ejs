@@ -69,7 +69,7 @@
     </div>
 
     <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput">City</label>  
+      <label class="col-md-4 control-label" for="textinput">Zip Code</label>  
       <div class="col-md-4">
       <input id="city" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
       </div>
@@ -119,7 +119,7 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="selectbasic">Type of Food</label>
         <div class="col-md-4">
-          <select id="food-type" name="selectbasic" class="form-control">
+          <select id="foodtype" name="selectbasic" class="form-control">
             <option value="1">American</option>
             <option value="2">Gastro/Pub</option>
             <option value="3">Italian</option>
@@ -139,21 +139,21 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="textinput">Street</label>  
         <div class="col-md-4">
-        <input id="street" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
+        <input id="reststreet" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
         </div>
       </div>
   
       <div class="form-group">
         <label class="col-md-4 control-label" for="textinput">City</label>  
         <div class="col-md-4">
-        <input id="city" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
+        <input id="restcity" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
         </div>
       </div>
   
       <div class="form-group">
         <label class="col-md-4 control-label" for="textinput">Zip Code</label>  
         <div class="col-md-4">
-        <input id="zipcode" name="textinput" type="text" placeholder="Required" class="form-control input-md" required="">
+        <input id="restzip" name="textinput" type="text" placeholder="Required" class="form-control input-md" required="">
         </div>
       </div>
       
@@ -161,13 +161,23 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="textarea">Description</label>
         <div class="col-md-4">                     
-          <textarea class="form-control" id="textarea" name="textarea"></textarea>
-          <input type="submit" value="Submit" id="submit">
+          <textarea class="form-control" id="restDescription" name="textarea"></textarea>
+          <input type="submit" value="Submit" id="restSubmit">
         </div>
       </div>
       
       </fieldset>
+      <legend id="bottomlegend"><button id="gogo">List Your Event</button></legend>  
 
     </form>
-    <legend id="bottomlegend"><button id="gogo">List Your Event</button></legend>  
-  </div>
+   
+
+
+    <!-- <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary" id="one">
+        <input type="radio" name="options" autocomplete="off"> Event
+      </label>
+      <label class="btn btn-primary" id="two">
+        <input type="radio" name="options" autocomplete="off"> Restaurant
+      </label>
+    </div> -->
