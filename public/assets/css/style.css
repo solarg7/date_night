@@ -236,3 +236,9 @@ background-color: #499bea;
 #myCarousel {
   cursor: pointer;
 }
+
+.container{
+  /* padding-right: 70px;
+  padding-left: 70px; */
+  width:80%;
+}
