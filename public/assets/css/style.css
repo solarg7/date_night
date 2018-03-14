@@ -142,6 +142,10 @@ legend, .btn-group {
   border: 0;
 }
 
+#go:hover, #gogo:hover {
+  text-decoration: underline;
+}
+
 #event, #restaurant {
   display: none;
 }
