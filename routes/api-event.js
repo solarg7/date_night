@@ -15,6 +15,12 @@ module.exports = function(app) {
         });
     });
 
+    app.get("/api/event", function(req, res) {
+        db.EventPost.findAll({}).then(function(results) {
+            res.json(results);
+        });
+    });
+
     app.get("/api/event/:id", function(req, res) {
         var query = req.params.id;
         db.EventPost.findOne({

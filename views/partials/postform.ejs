@@ -36,7 +36,6 @@
           </div>
         </div>
     
-<<<<<<< HEAD
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Zip Code</label>  
           <div class="col-md-4">
@@ -71,85 +70,13 @@
         </div>
         </fieldset>
         </form>
-=======
-    <!-- Text input-->
-    <!-- <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput">First Name</label>  
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Zip Code</label>  
       <div class="col-md-4">
-      <input id="firstname" name="textinput" type="text" placeholder="placeholder" class="form-control input-md" required="">
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput">Last Name</label>  
-      <div class="col-md-4">
-      <input id="lastname" name="textinput" type="text" placeholder="placeholder" class="form-control input-md" required="">
-      </div>
-    </div> -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="textarea">Event Name</label>
-      <div class="col-md-4">                     
-        <input type="text" class="form-control" id="eventname" name="textarea">
-      </div>
-    </div>
-
-    <!-- Select Basic -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="selectbasic">Select Type</label>
-      <div class="col-md-4">
-        <select id="typeevent" name="selectbasic" class="form-control">
-          <option value="1">Festival</option>
-          <option value="2">Parade</option>
-          <option value="3">Garage Sale</option>
-          <option value="4">Carnival</option>
-          <option value="5">Flea Market</option>
-          <option value="6">Outdoors</option>
-          <option value="7">Other</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput">Street</label>  
-      <div class="col-md-4">
-      <input id="street" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput">City</label>  
-      <div class="col-md-4">
-      <input id="city" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
-      </div>
-    </div>
->>>>>>> master
-
-        <legend id="bottomlegend"><button id="go">List Your Restaurant</button></legend>  
-    
+      <input id="eventzip" name="textinput" type="text" placeholder="Zip Code..." class="form-control input-md" required="">
       </div>
 
-<<<<<<< HEAD
-
-=======
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput">Time</label>  
-      <div class="col-md-4">
-      <input id="time" name="textinput" type="text" placeholder="Required" class="form-control input-md" required="">
-      </div>
-    </div>
-    
-    <!-- Textarea -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="textarea">Description</label>
-      <div class="col-md-4">                     
-        <textarea class="form-control" id="textarea" name="textarea"></textarea>
-        <input type="submit" value="Submit" id="submit">
-      </div>
-    </div>
-    
-    </fieldset>
-    </form>
->>>>>>> master
 
 
   <div id="restaurant" class="row">
@@ -173,7 +100,7 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="selectbasic">Type of Food</label>
         <div class="col-md-4">
-          <select id="food-type" name="selectbasic" class="form-control">
+          <select id="foodtype" name="selectbasic" class="form-control">
             <option value="1">American</option>
             <option value="2">Gastro/Pub</option>
             <option value="3">Italian</option>
@@ -193,21 +120,21 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="textinput">Street</label>  
         <div class="col-md-4">
-        <input id="street" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
+        <input id="reststreet" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
         </div>
       </div>
   
       <div class="form-group">
         <label class="col-md-4 control-label" for="textinput">City</label>  
         <div class="col-md-4">
-        <input id="city" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
+        <input id="restcity" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
         </div>
       </div>
   
       <div class="form-group">
         <label class="col-md-4 control-label" for="textinput">Zip Code</label>  
         <div class="col-md-4">
-        <input id="zipcode" name="textinput" type="text" placeholder="Required" class="form-control input-md" required="">
+        <input id="restzip" name="textinput" type="text" placeholder="Required" class="form-control input-md" required="">
         </div>
       </div>
       
@@ -215,13 +142,22 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="textarea">Description</label>
         <div class="col-md-4">                     
-          <textarea class="form-control" id="textarea" name="textarea"></textarea>
-          <input type="submit" value="Submit" id="submit">
+          <textarea class="form-control" id="restDescription" name="textarea"></textarea>
+          <input type="submit" value="Submit" id="restSubmit">
         </div>
       </div>
       
       </fieldset>
 
     </form>
-    <legend id="bottomlegend"><button id="gogo">List Your Event</button></legend>  
-  </div>
+   
+
+
+    <!-- <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary" id="one">
+        <input type="radio" name="options" autocomplete="off"> Event
+      </label>
+      <label class="btn btn-primary" id="two">
+        <input type="radio" name="options" autocomplete="off"> Restaurant
+      </label>
+    </div> -->
