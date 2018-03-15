@@ -7,6 +7,7 @@ $("#eventSubmit").on("click", function(event) {
         eventType: $("#typeevent").val().trim(),
         street: $("#eventstreet").val().trim(),
         city: $("#eventcity").val().trim(),
+        state: $("#eventstate").val().trim(),
         zip: $("#eventzip").val().trim(),
         time: $("#time").val().trim(),
         description: $("#eventDescription").val().trim()
@@ -18,7 +19,7 @@ $("#eventSubmit").on("click", function(event) {
         console.log("added");
     });
 
-    $("#event").each(function() {
+    $("#eventForm").each(function() {
         this.reset();
     });
 });
@@ -30,6 +31,7 @@ $("#restSubmit").on("click", function(event) {
         foodType: $("#foodtype").val().trim(),
         street: $("#reststreet").val().trim(),
         city: $("#restcity").val().trim(),
+        state: $("#reststate").val().trim(),
         zip: $("#restzip").val().trim(),
         description: $("#restDescription").val().trim()
     };
@@ -40,7 +42,7 @@ $("#restSubmit").on("click", function(event) {
         console.log("added");
     });
 
-    $("#restaurant").each(function() {
+    $("#restaurantForm").each(function() {
         this.reset();
     });
 });

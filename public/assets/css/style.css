@@ -262,3 +262,13 @@ background-color: #fefcea;
 .sticky + .content {
   padding-top: 60px;
 }
+
+.btn-listing {
+  background: rgba(0,0,0,0);
+  outline: none;
+  border: none;
+}
+
+.btn-listing:hover {
+  text-decoration: underline;
+}

@@ -3,8 +3,14 @@ $(document).ready(function() {
         for (i = 0; i < data.length; i++) {
             $('<li/>', {
                 id: 'rest' + i,
-                text: data[i].name
             }).appendTo("#restList");
+
+            $('<button/>', {
+                class: "btn-listing restaurant" + i,
+                id: data[i].id,
+                value: data[i].id,
+                text: data[i].name
+            }).appendTo('#rest' + i);
         }
     });
 
@@ -17,4 +23,7 @@ $(document).ready(function() {
         }
     });
 
+    $("ul").on("click", ".btn-listing", function(event) {
+        console.log(this.value);
+    });
 });
