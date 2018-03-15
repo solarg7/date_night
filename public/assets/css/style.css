@@ -4,6 +4,7 @@ html {
   height: 100%;
   width: 100%;
   min-width: 100%;
+  background: #000;
 }
 
 body {
@@ -12,10 +13,11 @@ body {
   height: 100%;
   width: 100%;
   min-width: 100%;
+  background-attachment: fixed;
 }
 
 header {
-	background: url(../images/orlandoskyline1.jpg) 0 0 repeat-x;
+	background: url(../images/orlandoskyline2.jpg) 0 0 repeat-x;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -27,12 +29,12 @@ header {
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,0+100;Blue+to+Transparent */
-background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
-background-repeat: no-repeat;
+  background: #fefcea; /* Old browsers */
+  background: -moz-linear-gradient(top, #fefcea 0%, #000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fefcea 0%,#000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fefcea 0%,#000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#000',GradientType=0 ); /* IE6-9 */
+  background-repeat: no-repeat;
 }
 
 .jumbotron {
@@ -58,36 +60,29 @@ input, select, #textarea {
   margin-bottom: 10px;}
 input:focus, input:hover, select:focus, select:hover, #textarea {
   background-color: #ffffff;
-  border: 1px solid #b1e1e4;}
+  border: 1px solid #fefcea;}
 
 
 
-input#submit {
+input#submit, input#restSubmit {
   padding: 5px 10px 5px 10px;
-  color: #ffffff;
+  color: #000;
   text-shadow: 0px 1px 1px #ffffff;
-  /* border-bottom: 2px solid #b2b2b2; */
-  background-color: #499bea;
-  background: -webkit-gradient(linear, left top, left bottom, from(#499bea), to(#207ce5));
-  /* background: -moz-linear-gradient(top, #beeae9, #a8cfce);
-  background: -o-linear-gradient(top, #beeae9, #a8cfce);
-  background: -ms-linear-gradient(top, #beeae9, #a8cfce); */
+  background-color: #fefcea;
   }
 
-input#submit:hover {
-  color: #a1dbff;
+
+  
+input#submit:hover, input#restSubmit:hover {
+  color: #000;
   border: 1px solid #a4a4a4;
   /* border-top: 2px solid #b2b2b2; */
-  background-color: #a0dbc4;
-  background: -webkit-gradient(linear, left top, left bottom, from(#499bea), to(#207ce5));
-  /* background: -moz-linear-gradient(top, #a8cfce, #beeae9);
-  background: -o-linear-gradient(top, #a8cfce, #beeae9);
-  background: -ms-linear-gradient(top, #a8cfce, #beeae9); */
-  }
+  background-color: #f1da36;
+}
 
 fieldset {
   width: 750px;
-  border: 1px solid #ffffff;
+  border: 1px solid #f1da36;
   border-radius: 10px;
   padding: 20px;
   margin: auto;
@@ -96,7 +91,7 @@ fieldset {
 
 #pick {
   width: 750px;
-  border: 1px solid #499bea;
+  border: 1px solid #f1da36;
   border-radius: 10px;
   padding: 20px;
   margin: auto;
@@ -105,36 +100,36 @@ fieldset {
   
 
 legend, .btn-group {
-  border: 1px solid #dcdcdc;
+  border: 1px solid #f1da36;
   border-radius: 10px;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #000;
   text-align: left;
   text-transform: uppercase;
 }
 
 #listevent {
-  border: 1px solid #499bea;
+  border: 1px solid #f1da36;
   border-radius: 10px;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #000;
   text-align: left;
   text-transform: uppercase;
 }
 
-
-
 #bottomlegend {
-  border: 1px solid #499bea;
+  border: 1px solid #f1da36;
   border-radius: 10px;
   padding: 10px 20px;
-  color: #499bea;
+  color: #000;
   background-color: #fff;
   text-align: left;
   text-transform: uppercase;
-  margin-top:-35px;
   width: 40%;
-  margin-left: 400px;
+  /* margin-left: 400px; */
+  margin: auto;
+  margin-top:-30px;
+  
 }
 
 #go, #gogo {
@@ -176,7 +171,7 @@ legend, .btn-group {
 }
 
 #event, #restaurant {
-  height: 600px;
+  height: 750px;
 }
 
 .panel {
@@ -188,8 +183,8 @@ legend, .btn-group {
 
 .panel > .panel-heading {
     background-image: none;
-    background-color: #499bea;
-    color: white;
+    background-color: #fefcea;
+    color: #000;
     border: none;
 }
 
@@ -198,24 +193,15 @@ legend, .btn-group {
 }
 
 
-.navbar {
-  background-color: #499bea;
-  border: 1px solid #dcdcdc;
-  color: #fff;
-}
-
-
-
 .topnav {
-  /* background-color: #333; */
-background-color: #499bea;
+background-color: #fefcea;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -226,21 +212,21 @@ background-color: #499bea;
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background: #a7c7dc; /* Old browsers */
-  background: -moz-linear-gradient(top, #a7c7dc 0%, #85b2d3 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #a7c7dc 0%,#85b2d3 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #a7c7dc 0%,#85b2d3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7c7dc', endColorstr='#85b2d3',GradientType=0 ); /* IE6-9 */;
+  background: #fefcea; /* Old browsers */
+  background: -moz-linear-gradient(top, #fefcea  0%, #f1da36 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fefcea  0%,#f1da36 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fefcea  0%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea ', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */;
   color: black;
 }
 
 .active {
   font-weight: bold;
-  background: #a7c7dc; /* Old browsers */
-  background: -moz-linear-gradient(top, #a7c7dc 0%, #85b2d3 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #a7c7dc 0%,#85b2d3 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #a7c7dc 0%,#85b2d3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7c7dc', endColorstr='#85b2d3',GradientType=0 ); /* IE6-9 */;
+  background: #f1da36; /* Old browsers */
+  background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fefcea 0%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */;
 }
 
 #slider {
@@ -261,7 +247,18 @@ background-color: #499bea;
   cursor: pointer;
 }
 
-.container{
+#carousel {
+  width:55%;
+}
 
-  width:80%;
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
