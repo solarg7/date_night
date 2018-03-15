@@ -16,27 +16,11 @@
 
 
 <div class="row" id="event">
-    <form class="form-horizontal">
+    <form class="form-horizontal" id="eventForm">
         <fieldset id="pick">
         
         <!-- Form Name -->
         <legend id="listevent">List Your Event</legend>
-
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="textarea">Event Name</label>
-          <div class="col-md-4">                     
-            <input type="text" class="form-control" id="eventname" name="textarea">
-          </div>
-        </div>
-    
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="textinput">City</label>  
-          <div class="col-md-4">
-          <input id="city" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
-          </div>
-        </div>
-    
-
 
     <div class="form-group">
       <label class="col-md-4 control-label" for="textarea">Event Name</label>
@@ -64,14 +48,28 @@
     <div class="form-group">
       <label class="col-md-4 control-label" for="textinput">Street</label>  
       <div class="col-md-4">
-      <input id="street" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
+      <input id="eventstreet" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">City</label>  
+      <div class="col-md-4">
+      <input id="eventcity" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">State</label>  
+      <div class="col-md-4">
+      <input id="eventstate" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
       </div>
     </div>
 
     <div class="form-group">
       <label class="col-md-4 control-label" for="textinput">Zip Code</label>  
       <div class="col-md-4">
-      <input id="city" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
+      <input id="eventzip" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
       </div>
     </div>
 
@@ -101,7 +99,7 @@
 
   <div id="restaurant" class="row">
       
-    <form class="form-horizontal">
+    <form class="form-horizontal" id="restaurantForm">
       <fieldset id="pick">
       
       <!-- Form Name -->
@@ -147,6 +145,13 @@
         <label class="col-md-4 control-label" for="textinput">City</label>  
         <div class="col-md-4">
         <input id="restcity" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="textinput">State</label>  
+        <div class="col-md-4">
+        <input id="reststate" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
         </div>
       </div>
   
