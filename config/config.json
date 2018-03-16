@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "rush2112",
+    "password": "",
     "database": "date_night_db",
     "host": "localhost",
     "dialect": "mysql"
