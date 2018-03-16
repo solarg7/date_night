@@ -33,8 +33,16 @@ module.exports = function(app) {
                 term: results.name,
                 location: results.city + ", " + results.state
             }).then(response => {
-                console.log(response.jsonBody.businesses[0].name);
-                thing = response.jsonBody.businesses[0];
+                yelpResult = response.jsonBody.businesses[0];
+                //console.log(response.jsonBody.businesses[0].name);
+                client.reviews(response.jsonBody.businesses[0].id).then(reviewsResponse => {
+                    yelpReviews = reviewsResponse.jsonBody.reviews;
+                    res.json({
+                        dbResult: {results},
+                        yelpResult: {yelpResult},
+                        yelpReviews: {yelpReviews}
+                    });
+                });
             }).catch(e => {
                 console.log(e);
             });

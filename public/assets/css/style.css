@@ -272,3 +272,8 @@ background-color: #fefcea;
 .btn-listing:hover {
   text-decoration: underline;
 }
+
+.reviews {
+  width: 50%;
+  overflow-wrap: break-word;
+}
