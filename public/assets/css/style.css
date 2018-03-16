@@ -17,7 +17,6 @@ body {
 }
 
 header {
-	/* background: url(../images/orlandoskyline2.jpg) 0 0 repeat-x; */
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -206,10 +205,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
   text-decoration: underline;
 }
 
-#event, #restaurant {
+#event, #restaurant, #results-container {
   display: none;
 }
 
+#results-container {
+  margin-top: 100px;
+}
 
 .btn-group {
   display: block;
