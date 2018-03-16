@@ -30,6 +30,8 @@ $(document).ready(function() {
             $("#listingName").html(data.dbResult.results.name);
             $("#listingAddress1").html(data.yelpResult.yelpResult.location.display_address[0]);
             $("#listingAddress2").html(data.yelpResult.yelpResult.location.display_address[1]);
+            $("#listingPhone").html(data.yelpResult.yelpResult.display_phone);
+            $("#listingType").html(data.yelpResult.yelpResult.categories[0].title);
             $("#listingPrice").html(data.yelpResult.yelpResult.price);
             $("#listingDescrip").html(data.dbResult.results.description);
 
@@ -38,6 +40,79 @@ $(document).ready(function() {
             });
 
             $("#listingReviews").html(reviews);
+
+            switch (data.yelpResult.yelpResult.rating) {
+                case 0:
+                    $('<div/>', {
+                        id: "overallRating",
+                        class: "overall",
+                        html: '<img src="../images/yelp/small_0.png"> <a href="' + data.yelpResult.yelpResult.url + '"> out of ' + data.yelpResult.yelpResult.review_count + 'reviews.</a>'
+                    }).appendTo('#yelpReviews');
+                    break;
+                case 1:
+                    $('<div/>', {
+                        id: "overallRating",
+                        class: "overall",
+                        html: '<img src="../images/yelp/small_1.png"> <a href="' + data.yelpResult.yelpResult.url + '"> out of ' + data.yelpResult.yelpResult.review_count + 'reviews.</a>'
+                    }).appendTo('#yelpReviews');
+                    break;
+                case 1.5:
+                    $('<div/>', {
+                        id: "overallRating",
+                        class: "overall",
+                        html: '<img src="../images/yelp/small_1_half.png"> <a href="' + data.yelpResult.yelpResult.url + '"> out of ' + data.yelpResult.yelpResult.review_count + 'reviews.</a>'
+                    }).appendTo('#yelpReviews');
+                    break;
+                case 2:
+                    $('<div/>', {
+                        id: "overallRating",
+                        class: "overall",
+                        html: '<img src="../images/yelp/small_2.png"> <a href="' + data.yelpResult.yelpResult.url + '"> out of ' + data.yelpResult.yelpResult.review_count + 'reviews.</a>'
+                    }).appendTo('#yelpReviews');
+                    break;
+                case 2.5:
+                    $('<div/>', {
+                        id: "overallRating",
+                        class: "overall",
+                        html: '<img src="../images/yelp/small_2_half.png"> <a href="' + data.yelpResult.yelpResult.url + '"> out of ' + data.yelpResult.yelpResult.review_count + 'reviews.</a>'
+                    }).appendTo('#yelpReviews');
+                    break;
+                case 3:
+                    $('<div/>', {
+                        id: "overallRating",
+                        class: "overall",
+                        html: '<img src="../images/yelp/small_3.png"> <a href="' + data.yelpResult.yelpResult.url + '"> out of ' + data.yelpResult.yelpResult.review_count + 'reviews.</a>'
+                    }).appendTo('#yelpReviews');
+                    break;
+                case 3.5:
+                    $('<div/>', {
+                        id: "overallRating",
+                        class: "overall",
+                        html: '<img src="../images/yelp/small_3_half.png"> <a href="' + data.yelpResult.yelpResult.url + '"> out of ' + data.yelpResult.yelpResult.review_count + 'reviews.</a>'
+                    }).appendTo('#yelpReviews');
+                    break;
+                case 4:
+                    $('<div/>', {
+                        id: "overallRating",
+                        class: "overall",
+                        html: '<img src="../images/yelp/small_4.png"> <a href="' + data.yelpResult.yelpResult.url + '"> out of ' + data.yelpResult.yelpResult.review_count + 'reviews.</a>'
+                    }).appendTo('#yelpReviews');
+                    break;
+                case 4.5:
+                    $('<div/>', {
+                        id: "overallRating",
+                        class: "overall",
+                        html: '<img src="../images/yelp/small_4_half.png"> <a href="' + data.yelpResult.yelpResult.url + '"> out of ' + data.yelpResult.yelpResult.review_count + 'reviews.</a>'
+                    }).appendTo('#yelpReviews');
+                    break;
+                case 5:
+                    $('<div/>', {
+                        id: "overallRating",
+                        class: "overall",
+                        html: '<img src="../images/yelp/small_5.png"> <a href="' + data.yelpResult.yelpResult.url + '"> out of ' + data.yelpResult.yelpResult.review_count + 'reviews.</a>'
+                    }).appendTo('#yelpReviews');
+                    break;
+            }
 
             for (i = 0; i < data.yelpReviews.yelpReviews.length; i++) {
                 $("<p/>", {
