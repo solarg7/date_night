@@ -25,6 +25,7 @@
     "express-handlebars": "^3.0.0",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.2",
-    "sequelize": "^4.35.5"
+    "sequelize": "^4.35.5",
+    "yelp-fusion": "^2.0.3"
   }
 }
