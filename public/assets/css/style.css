@@ -17,7 +17,6 @@ body {
 }
 
 header {
-	/* background: url(../images/orlandoskyline2.jpg) 0 0 repeat-x; */
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -67,7 +66,7 @@ body{
 
 #dummy {
     display: none; 
-    background-image: url("/images/orlandoskyline-background.jpg"), url("../images/frank_steins_bar_cover.jpg"), url("../images/cropped-BM-about.jpg"), url("../images/fireworks.jpg"), url("../images/orlandoskyline-background.jpg");
+    background-image: url("../images/orlandoskyline-background.jpg"), url("../images/frank_steins_bar_cover.jpg"), url("../images/cropped-BM-about.jpg"), url("../images/fireworks.jpg"), url("../images/orlandoskyline-background.jpg");
 }
 
 
@@ -206,10 +205,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
   text-decoration: underline;
 }
 
-#event, #restaurant {
+#event, #restaurant, #results-container {
   display: none;
 }
 
+#results-container {
+  margin-top: 100px;
+}
 
 .btn-group {
   display: block;
