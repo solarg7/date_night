@@ -7,7 +7,11 @@
         <fieldset id="pick">
         
         <!-- Form Name -->
-        <legend id="listevent">Event Results</legend>
+        <legend id="listevent">Restaurant Results</legend>
+
+        <div>
+          <ul id="restList" style="text-align: center;"></ul>
+        </div>
 
     
     </fieldset>
@@ -20,8 +24,11 @@
       <fieldset id="pick">
       
       <!-- Form Name -->
-      <legend id="listevent">Restaurant Results</legend>
+      <legend id="listevent">Event Results</legend>
       
+        <div>
+          <ul id="eventList" style="text-align: center;"></ul>
+        </div>
       
       </fieldset>
 
@@ -34,7 +41,7 @@
 </div>
 
 
-  <!-- <div class="row">
+   <!--<div class="row">
     <div class="col-sm-6">
 
         <h3>Local Restaurants</h3>
@@ -54,10 +61,10 @@
             </ul>
 
     </div>
-</div>
+</div> -->
 
-<div class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" tabindex="-1" role="dialog" id="listing-modal-rest">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -65,17 +72,76 @@
         </div>
         <div class="modal-body">
           <div class="container">
-              <div class="row" id="listingAddress"></div>
-              <div class="row" id="listingPrice"></div>
-              <div class="row" id="listingDescrip"></div>
-              <div class="row" id="listingReviews"></div>
-          </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row" id="listingAddress1" style="float: left"></div>
+                  <br>
+                  <div class="row" id="listingAddress2" style="float: left"></div>
+                  <br><br>
+                  <div class="row" id="listingPhone" style="float: left"></div>
+                  <br>
+                  <div class="row" id="listingType" style="float: left"></div>
+                  <br>
+                  <div class="row" id="listingPrice" style="float: left"></div>
+                  <br><br>
+                  <div class="row" id="listingDescrip" style="float: left"></div>
+                  <br><br>
+                  <div class="row" id="divider1" style="border-bottom: 1px solid rgba(0,0,0,.5)"></div>
+                  <div class="row" id="listingReviews" style="float: left"></div>
+                  <br><br><br>
+                  <div class="row" id="yelpLogo" style="float:left"></div> 
+                  <div class="row" id="divider2" style="border-bottom: 1px solid rgba(0,0,0,.5)"></div>                 
+                </div>                
+                <div class="col-md-3" id="listingPics"></div>
+              </div>
+              </div>
+              
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" style:"text-align: right">Close</button>
         </div>
       </div>
     </div>
   </div>
-</div> -->
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="listing-modal-event">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="eventName"></h4>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row" id="eventLocation" style="float: left"></div>
+                    <br>
+                    <div class="row" id="eventAddress1" style="float: left"></div>
+                    <br>
+                    <div class="row" id="eventAddress2" style="float: left"></div>
+                    <br><br>
+                    <div class="row" id="eventPhone" style="float: left"></div>
+                    <br>
+                    <div class="row" id="eventType" style="float: left"></div>
+                    <br><br>
+                    <div class="row" id="eventDescrip" style="float: left"></div>
+                    <br><br>
+                    <div class="row" id="divider1" style="border-bottom: 1px solid rgba(0,0,0,.5)"></div>
+                    <div class="row" id="eventReviews" style="float: left"></div>
+                    <br><br><br>
+                    <div class="row" id="yelpLogoEvent" style="float:left"></div> 
+                    <div class="row" id="divider2" style="border-bottom: 1px solid rgba(0,0,0,.5)"></div>                 
+                  </div>                
+                  <div class="col-md-3" id="eventPics"></div>
+                </div>
+                </div>
+                
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" style:"text-align: right">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

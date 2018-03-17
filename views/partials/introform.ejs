@@ -1,16 +1,16 @@
 <script>
-  $(document).ready(function(){
-      $("#results-test").click(function(){
-          $("#results-container").show(1000);
-          $("#home-module").hide(1000);
-      });
+  //$(document).ready(function(){
+  //    $("#results-test").click(function(){
+  //        $("#results-container").show(1000);
+  //        $("#home-module").hide(1000);
+  //    });
 
-  });
+  //});
   </script>
 
 
 <section id="home-module">
-<h1>This is Date Night</h1>
+
 
 <form id="introform" class="form-horizontal">
     <fieldset>
@@ -22,12 +22,11 @@
     <div class="form-group">
       <label class="col-md-2 control-label" for="searcharea"></label>
       <div class="col-md-2">                     
-        <textarea class="form-control" id="searcharea" name="searcharea">Orlando</textarea><BR>
+        <input type="text" class="form-control locationSearch" id="searcharea" name="searcharea" placeholder="City"></input><BR>
 
-          <input type="submit" value="Submit" id="submit">
+          <input type="submit" value="Submit" id="submit" class="resultSearch">
       </div>
 
     </fieldset>
     </form>
-    <button id="results-test">See Results Button Test</button>
   </section>

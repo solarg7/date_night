@@ -29,6 +29,13 @@
       </div>
     </div>
 
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="textarea">Location</label>
+        <div class="col-md-4">                     
+          <input type="text" class="form-control" id="eventLocation" name="textarea">
+        </div>
+      </div>
+
     <!-- Select Basic -->
     <div class="form-group">
       <label class="col-md-4 control-label" for="selectbasic">Select Type</label>
@@ -45,12 +52,12 @@
       </div>
     </div>
 
-    <div class="form-group">
+    <!--<div class="form-group">
       <label class="col-md-4 control-label" for="textinput">Street</label>  
       <div class="col-md-4">
       <input id="eventstreet" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
       </div>
-    </div>
+    </div>-->
 
     <div class="form-group">
       <label class="col-md-4 control-label" for="textinput">City</label>  
@@ -59,12 +66,12 @@
       </div>
     </div>
 
-    <div class="form-group">
+    <!--<div class="form-group">
       <label class="col-md-4 control-label" for="textinput">State</label>  
       <div class="col-md-4">
       <input id="eventstate" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
       </div>
-    </div>
+    </div>-->
 
     <div class="form-group">
       <label class="col-md-4 control-label" for="textinput">Zip Code</label>  
@@ -74,19 +81,19 @@
     </div>
 
 
-    <div class="form-group">
+    <!--<div class="form-group">
       <label class="col-md-4 control-label" for="textinput">Time</label>  
       <div class="col-md-4">
       <input id="time" name="textinput" type="text" placeholder="Required" class="form-control input-md" required="">
       </div>
-    </div>
+    </div>-->
     
     <!-- Textarea -->
     <div class="form-group">
       <label class="col-md-4 control-label" for="textarea">Description</label>
       <div class="col-md-4">                     
-        <textarea class="form-control" id="textarea" name="textarea"></textarea>
-        <input type="submit" value="Submit" id="submit">
+        <textarea class="form-control" id="eventDescription" name="textarea" style="height: 100px; width: 400px;"></textarea>
+        <input type="submit" value="Submit" id="submit" class="eventSubmit">
       </div>
     </div>
     
@@ -113,33 +120,12 @@
         </div>
       </div>
 
-      <!-- Select Basic -->
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="selectbasic">Type of Food</label>
-        <div class="col-md-4">
-          <select id="foodtype" name="selectbasic" class="form-control">
-            <option value="1">American</option>
-            <option value="2">Gastro/Pub</option>
-            <option value="3">Italian</option>
-            <option value="4">Mediterranean</option>
-            <option value="5">Latino/Hispanic</option>
-            <option value="6">German/Beirgarten</option>
-            <option value="7">Indian</option>
-            <option value="8">Chinese</option>
-            <option value="9">Japanese</option>
-            <option value="10">Vegetarian</option>
-            <option value="11">Other</option>
-
-          </select>
-        </div>
-      </div>
-
-      <div class="form-group">
+      <!--<div class="form-group">
         <label class="col-md-4 control-label" for="textinput">Street</label>  
         <div class="col-md-4">
         <input id="reststreet" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
         </div>
-      </div>
+      </div>-->
   
       <div class="form-group">
         <label class="col-md-4 control-label" for="textinput">City</label>  
@@ -148,12 +134,12 @@
         </div>
       </div>
 
-      <div class="form-group">
+      <!--<div class="form-group">
         <label class="col-md-4 control-label" for="textinput">State</label>  
         <div class="col-md-4">
         <input id="reststate" name="textinput" type="text" placeholder="Optional" class="form-control input-md">
         </div>
-      </div>
+      </div>-->
   
       <div class="form-group">
         <label class="col-md-4 control-label" for="textinput">Zip Code</label>  
@@ -166,7 +152,7 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="textarea">Description</label>
         <div class="col-md-4">                     
-          <textarea class="form-control" id="restDescription" name="textarea"></textarea>
+          <textarea class="form-control" id="restDescription" name="textarea" style="height: 100px; width: 400px;"></textarea>
           <input type="submit" value="Submit" id="restSubmit">
         </div>
       </div>
