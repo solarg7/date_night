@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-$("#eventSubmit").on("click", function(event) {
+$(".eventSubmit").on("click", function(event) {
     event.preventDefault();
     var newEvent = {
         event: $("#eventname").val().trim(),
