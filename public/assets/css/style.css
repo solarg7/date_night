@@ -179,6 +179,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
   color: #fff;
   text-align: left;
   text-transform: uppercase;
+  font-family: 'Amaranth', sans-serif;
 }
 
 #bottomlegend {
@@ -391,4 +392,40 @@ h1 {
   background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
   overflow: hidden;
+}
+
+#signup {
+  background: rgba(0,0,0,0);
+  border: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#signup:hover {
+  text-decoration: underline;
+}
+
+#loginswitch {
+  background: rgba(0,0,0,0);
+  border: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#loginswitch:hover {
+  text-decoration: underline;
+}
+
+#signup-module {
+  display: none;
+}
+
+#eventList {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 24px;
+}
+
+#restList {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 24px;
 }

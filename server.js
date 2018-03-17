@@ -1,5 +1,7 @@
 //Dependencies
 var express = require("express");
+var passport = require('passport');
+var session = require('express-session');
 var bodyParser = require("body-parser");
 var ejs = require("ejs");
 var path = require('path');
@@ -25,11 +27,15 @@ app.use('/img',express.static(path.join(__dirname, 'public/images')));
 
 app.locals.eat = require('./db/eat.json');
 
+app.use(passport.initialize());
+app.use(passport.session());
+
+
 
 // Routes
 require("./routes/api-event.js")(app);
 require("./routes/api-restaurant.js")(app);
-require("./routes/api-user.js")(app);
+require("./routes/api-user.js")(passport, app);
 require("./routes/html-routes.js")(app);
 
 // Syncing with our database and starting the express server
