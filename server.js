@@ -2,6 +2,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var ejs = require("ejs");
+var path = require('path');
 
 //Express Server Setup
 var app = express();
@@ -20,6 +21,7 @@ app.use(bodyParser.json());
 
 // Static directory
 app.use(express.static("public"));
+app.use('/img',express.static(path.join(__dirname, 'public/images')));
 
 app.locals.eat = require('./db/eat.json');
 

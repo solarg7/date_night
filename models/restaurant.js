@@ -4,21 +4,22 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         },
-        foodType: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        street: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
+        //foodType: {
+        //    type: DataTypes.STRING,
+        //    allowNull: false
+        //},
+        //street: {
+        //    type: DataTypes.STRING,
+        //    allowNull: false
+        //},
         city: {
             type: DataTypes.STRING,
             allowNull: false
         },
         state: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            defaultValue: "FL"
         },
         zip: {
             type: DataTypes.STRING,
@@ -27,10 +28,10 @@ module.exports = function(sequelize, DataTypes) {
                 len: [1, 5]
             }
         },
-        price: {
-            type: DataTypes.STRING,
-            allowNull: true
-        },
+        //price: {
+        //    type: DataTypes.STRING,
+        //    allowNull: true
+        //},
         description: {
             type: DataTypes.TEXT,
             allowNull: false,

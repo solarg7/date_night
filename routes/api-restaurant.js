@@ -37,11 +37,16 @@ module.exports = function(app) {
                 //console.log(response.jsonBody.businesses[0].name);
                 client.reviews(response.jsonBody.businesses[0].id).then(reviewsResponse => {
                     yelpReviews = reviewsResponse.jsonBody.reviews;
-                    res.json({
-                        dbResult: {results},
-                        yelpResult: {yelpResult},
-                        yelpReviews: {yelpReviews}
-                    });
+                    client.business(response.jsonBody.businesses[0].id).then(businessResponse => {
+                        yelpBusiness = businessResponse.jsonBody;
+
+                        res.json({
+                            dbResult: {results},
+                            yelpResult: {yelpResult},
+                            yelpReviews: {yelpReviews},
+                            yelpBusiness: {yelpBusiness}
+                        });
+                    })
                 });
             }).catch(e => {
                 console.log(e);

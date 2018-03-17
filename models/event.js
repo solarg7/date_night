@@ -1,5 +1,9 @@
 module.exports = function(sequelize, DataTypes) {
     var EventPost = sequelize.define("EventPost", {
+        event: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         name: {
             type: DataTypes.STRING,
             allowNull: false
@@ -8,17 +12,18 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         },
-        street: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
+        //street: {
+        //    type: DataTypes.STRING,
+        //    allowNull: false
+        //},
         city: {
             type: DataTypes.STRING,
             allowNull: false
         },
         state: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            defaultValue: "FL"
         },
         zip: {
             type: DataTypes.STRING,
@@ -27,14 +32,14 @@ module.exports = function(sequelize, DataTypes) {
                 len: [1, 5]
             }
         },
-        time: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        price: {
-            type: DataTypes.STRING,
-            allowNull: true
-        },
+        //time: {
+        //    type: DataTypes.STRING,
+        //    allowNull: false
+        //},
+        //price: {
+        //    type: DataTypes.STRING,
+        //    allowNull: true
+        //},
         description: {
             type: DataTypes.TEXT,
             allowNull: false,
